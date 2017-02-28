@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sci.sponce.prjscmcapp" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="23" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="23" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MDIActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/title_activity_mdi"
+            android:logo="@mipmap/ic_children" >
+        </activity>
+        <activity
+            android:name=".NinosActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/title_activity_cat_ninos"
+            android:logo="@drawable/ic_launcher"
+            android:parentActivityName=".MDIActivity" >
+        </activity>
+        <activity
+            android:name=".UsuariosActivity"
+            android:label="@string/title_activity_usuarios" >
+        </activity>
+        <activity
+            android:name=".CasosComunitariosMenoresActivity"
+            android:label="@string/title_activity_casos_comunitarios_menores"
+            android:parentActivityName=".MDIActivity" >
+        </activity>
+        <activity
+            android:name=".VisitaNinosMenoresActivity"
+            android:label="@string/title_activity_visita_ninos_menores"
+            android:parentActivityName=".MDIActivity" >
+        </activity>
+        <activity
+            android:name=".CasosNinosActivity"
+            android:label="@string/title_activity_casos_ninos"
+            android:parentActivityName=".MDIActivity" >
+        </activity>
+        <activity
+            android:name=".VisitaNinosMayoresActivity"
+            android:label="@string/title_activity_visita_ninos_mayores" >
+        </activity>
+        <activity
+            android:name=".CargaArchivosActivity"
+            android:parentActivityName=".MDIActivity"
+            android:label="@string/title_activity_carga_archivos" >
+        </activity>
+        <activity
+            android:name=".VisorPDFActivity"
+            android:label="@string/title_activity_visor_pdf" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="115dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Nombre del Contacto"
+            android:textColor="@drawable/list_item_text_selector"
+            android:id="@+id/viewNombre" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@drawable/list_item_text_selector"
+            android:text="Telefono"
+            android:id="@+id/viewTelefono"
+
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Correo"
+            android:textColor="@drawable/list_item_text_selector"
+            android:id="@+id/viewCorreo"
+            android:layout_marginTop="0dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/list_item_text_selector"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Direccion"
+            android:id="@+id/viewDireccion"
+
+
+            android:layout_marginTop="0dp" />
+    </LinearLayout>
+
+    <!-- No se permite que el usuario de click sobre el CheckBox, la clase CheckableRelativeLayout
+    se encargara se esta asignacion para cada contacto de manera independiente -->
+
+
+
+</RelativeLayout>
